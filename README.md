@@ -5,6 +5,8 @@ provides several easy methods for creating, fetching orders, calculating EMIs, a
 
 A step-by-step React JS Integration guide is also available here: https://youtu.be/Xtj5_UC4LPM?si=Gs-IG7zPLvQVf0Qc
 
+Sample app: https://github.com/pluralonline/plural-reactjs-sdk-sampleapp
+
 ## Installation
 
 ### Prerequisites
