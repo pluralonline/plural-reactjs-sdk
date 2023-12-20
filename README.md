@@ -1,7 +1,9 @@
 # PineLabs React JS SDK
 
-This SDK offers simple to use api for integrating PineLabs api in your react js applications. It
-provide several easy methods for creating, fetching orders and calculate EMIs and verify hash.
+This SDK offers a simple-to-use API for integrating Pine Labs API in your React JS applications. It
+provides several easy methods for creating, fetching orders, calculating EMIs, and verifying hash.
+
+A step-by-step React JS Integration guide is also available here: https://youtu.be/Xtj5_UC4LPM?si=Gs-IG7zPLvQVf0Qc
 
 ## Installation
 
@@ -12,8 +14,8 @@ Before installing the React js SDK, make sure you meet the following prerequisit
 1. NODE version 18.17.1 or higher
 2. NPM version 9.6.7 or higher
 
-In order to install this SDK locally from a folder you’ll need to run the following commands. It
-will link and install the SDK in your react js project.
+To install this SDK locally from a folder you’ll need to run the following commands. It
+will link and install the SDK in your React JS project.
 
 ```text
 npm link "../path-to-sdk-folder"
@@ -24,14 +26,14 @@ npm install "../path-to-sdk-folder"
 
 ## Usage For SDK
 
-### Create Instance of PineLabs SDK
+### Create an Instance of Pine Labs SDK
 
-Import usePinelabs hooks from pinelabs sdk . It takes 4 parameters which are as follows :
+Import usePinelabs hooks from Pine Labs SDK. It takes 4 parameters which are as follows:
 
-1. Merchant ID (string) : Merchant ID provided by PineLabs
-2. Merchant Access Code (string) : Merchant Access Code Provided by PineLabs
-3. Merchant Secret (string) : Merchant Secret
-4. isTest (boolean) : If using test mode then set this to `true`
+1. Merchant ID (string): Merchant ID provided by PineLabs
+2. Merchant Access Code (string): Merchant Access Code Provided by PineLabs
+3. Merchant Secret (string): Merchant Secret
+4. isTest (boolean): If using test mode then set this to `true`
 
 ```javascript
     const pinelabs = usePineLabs("merchant_id", "merchant_access_code", "merchant_secret", isTest) 
@@ -41,7 +43,7 @@ Import usePinelabs hooks from pinelabs sdk . It takes 4 parameters which are as 
 
 ### Create Order
 
-This section explains how to create order for payment processing. There are a couple of things required in order to
+This section explains how to create an order for payment processing. There are a couple of things required to
 create an order.
 
 ### Parameters  Required & Optional
@@ -107,7 +109,7 @@ const udf_data = {
 ```
 
 ```javascript
-    // Payment Modes That Needs To Be Shown ( Mandatory )
+    // Payment Modes That Need to Be Shown ( Mandatory )
 const payment_mode = {
     netbanking: true, // Boolean
     cards: true, // Boolean
@@ -183,7 +185,7 @@ Fatal error: Uncaught Exception: MERCHANT PASSWORD DOES NOT MATCH
 
 Using the instance of the SDK we created above we will call the `.fetch()` method on the `payment` interface for
 fetching
-an order details with the provided transaction id and transaction type. It takes the following positional arguments
+an order details with the provided transaction ID and transaction type. It takes the following positional arguments
 
 1. Transaction ID
 2. Transaction Type
